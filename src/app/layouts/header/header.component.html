@@ -1,0 +1,64 @@
+<aside class="side-menu__container" [ngClass]="{'side-menu__container-active': showMenu}" (click)="toggleMenu()">
+        <nav class="slide-menu" [ngClass]="{'slide-menu-active': showMenu}" (click)="$event.stopImmediatePropagation();">
+          <section class="menu-header">
+            <span class="greeting__text">Profile Details</span>
+            <div class="profile-image__container">
+              <img src="https://avatars3.githubusercontent.com/u/5658460?s=460&v=4" alt="profile-image"
+                   class="profile__image">
+            </div>
+            <div class="account-details">
+              <span class="name__text">Shiv Prateek Sharma</span>
+              <span class="email__text">shiv1234@gmail.com</span>
+            </div>
+          </section>
+          <section class="menu-body">
+      
+          </section>
+          <section class="menu-footer">
+      
+          </section>
+        </nav>
+      </aside>
+<div>
+<nav class="navbar navbar-dark bg-dark mb-5">
+    <svg (click)="toggleMenu()" class="hamburger__icon" id="Menu_Burger_Icon" data-name="Menu Burger Icon"
+           viewBox="31.5 30 49.9 32">
+        <defs>
+          <style>.hamburger__icon__fill {
+            fill: #ffffff
+          }</style>
+        </defs>
+        <rect id="Rectangle_9" width="49.9" height="4" [ngClass]="{'hamburger__icon__fill-dark': darkModeActive}"
+              class="hamburger__icon__fill" data-name="Rectangle 9" rx="2"
+              transform="translate(31.5 58)"/>
+        <rect id="Rectangle_10" width="49.9" height="4" [ngClass]="{'hamburger__icon__fill-dark': darkModeActive}"
+              class="hamburger__icon__fill" data-name="Rectangle 10" rx="2"
+              transform="translate(31.5 44)"/>
+        <rect id="Rectangle_11" width="49.9" height="4" [ngClass]="{'hamburger__icon__fill-dark': darkModeActive}"
+              class="hamburger__icon__fill" data-name="Rectangle 11" rx="2"
+              transform="translate(31.5 30)"/>
+      </svg>
+    <a class="navbar-brand" href="/">BeGinOp</a>
+    <div class="navbar-expand mr-auto">
+      <div class="navbar-nav">
+        <!-- <a class="nav-item nav-link active" href="#">Home</a>
+        <a class="nav-item nav-link" href="#">About</a>
+        <a class="nav-item nav-link" href="#">Contact</a> -->
+      </div>
+    </div>
+    <div class="navbar-expand ml-auto navbar-nav">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="https://github.com/beeman" target="_blank">
+          <i class="fa fa-github"></i>
+        </a>
+        <a class="nav-item nav-link" href="https://twitter.com/beeman_nl" target="_blank">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a class="nav-item nav-link" href="https://medium.com/@beeman" target="_blank">
+          <i class="fa fa-medium"></i>
+        </a>
+        <!-- <button pButton type="button" (click)="rightSidebar = true" icon="pi pi-th-large"></button> -->
+      </div>
+    </div>
+  </nav>
+</div>
