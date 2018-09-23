@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/css/font-awesome.css";
+
+.navbar {
+     display:flex;
+     border: none;
+     border-radius: 0;
+     position:fixed;
+     width:100%;
+     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+     z-index:100000;
+ }
+ 
